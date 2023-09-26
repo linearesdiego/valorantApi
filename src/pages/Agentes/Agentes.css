@@ -1,0 +1,53 @@
+.back {
+    background-image: url(../../assets/backHomeAgents.jpg);
+    width: 100%;
+    height: calc(100vh - 200px);
+    position: relative;
+    overflow: hidden;
+}
+
+.imgContainerAgentes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgContainerAgentes img {
+    margin-top: 70px;
+}
+
+.footerAgent {
+    padding: 40px;
+    background-color: #282829;
+    color: white;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerAgent p,
+span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.slider {
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+}
+
+.slider h3 {
+    font-size: 5em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+
+}
+
+.slider h3:hover {
+    transform: translateY(-10px);
+    /*  color: #ff4655; */
+}
