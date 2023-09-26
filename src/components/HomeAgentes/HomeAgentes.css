@@ -13,24 +13,27 @@
 }
 
 .imgTop {
-    width: 800px;
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
 }
 
 .topContainer {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .topRight {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 10px;
     color: #ece8e1;
 }
 
 .topRight h1 {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: bold;
     max-width: 200px;
 }

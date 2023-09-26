@@ -12,12 +12,12 @@ import agentesImg from '../../assets/agentes.png'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Agentes as agentInterface } from '../../interface';
+import {  Agentes as agentInterface } from '../../interface';
 import { useNavigate } from 'react-router-dom';
 
 export const Agentes = () => {
     const dispatch = useAppDispatch()
-    const agentes = useAppSelector((state) => state.agent.data)
+    const agentes = useAppSelector((state) => state.agent.data) as agentInterface[]
     const navigate = useNavigate()
     useEffect(() => {
         dispatch(getAgent())
@@ -25,10 +25,13 @@ export const Agentes = () => {
 
     const settings = {
         infinite: true,
-        slidesToShow: 20,
-        slidesToScroll: 1,
+      slidesToShow: 10,
+      slidesToScroll: 1,
         vertical: true,
         verticalSwiping: true,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
 
     };
     return (

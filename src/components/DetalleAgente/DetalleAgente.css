@@ -4,9 +4,101 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    overflow: hidden;
+    color: wheat;
+}
+.rol{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.infoAgente{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: flex-end;
+}
+.infoAgente p{
+    max-width: 400px;
+    margin-top: 10px;
+    
+
+}
+.Nombre{
+    font-size: 4em;
+    cursor: pointer;
+}
+.Nombre:hover{
+    color: #ff4655;
+}
+.infoAgente h2{
+    font-size: 16px;
+
+}
+.imgRol{
+    width: 40px !important;
+    object-fit: cover;
+    margin-left: 10px;
+}
+.AgentesDetalleInfo .AgentesDetalleInfoImg {
+    height: 600px;
+    object-fit: cover;
+    width: 300px;
 }
 
-.AgentesDetalleInfo img {
-    height: 1000px;
+/*habilidades*/
+.habilidadesBox{
+    width: 100%;
+    padding: 40px 60px;
+    background-color:  #ede8e0;
+}
+.infoImg{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.habilidadesImg{
+    width: 100px;
+    filter: invert(1);
+    border: 2px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+
+}
+.habilidadesImg:hover{
+    background: linear-gradient(to left, #ff4655 50%, transparent 50%);
+    background-size: 200% 100%;
+    transition: background-position 0.3s ease;
+    background-position: -100% 0;
+    filter: invert(0);
+}
+.habilidadesClick{
+    background-color: #ff4655;
+    filter: invert(0);
+
+}
+.infoHabilidadesItemTitle{
+    margin-top: 20px;
+    font-size: 2em;
+}
+.infoHabilidadesItemParrafo{
+    max-width: 500px;
+}
+.habilidadesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.sliderDetalle{
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    width: 300px;
 }

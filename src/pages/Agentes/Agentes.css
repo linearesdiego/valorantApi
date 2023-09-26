@@ -1,7 +1,7 @@
 .back {
     background-image: url(../../assets/backHomeAgents.jpg);
     width: 100%;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 100px);
     position: relative;
     overflow: hidden;
 }
@@ -36,14 +36,16 @@ span {
     color: white;
     position: absolute;
     top: 0px;
-    left: 300px;
+    left: 200px;
 }
 
 .slider h3 {
-    font-size: 5em;
+    font-size: 4em;
     cursor: pointer;
     transition: transform 0.3s ease;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+
 
 }
 

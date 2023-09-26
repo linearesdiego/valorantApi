@@ -3,18 +3,20 @@ import axios from 'axios';
 import { Agentes } from "../interface";
 
 
-interface AgentSliceState {
+export interface AgentSliceState {
     msg: string;
     error: string | undefined;
     status: string;
-    data: Agentes[] | null; // Aquí usamos la interfaz Agentes
+    data: Agentes[] | {}; // Aquí usamos la interfaz Agentes
+    AgenteId: Agentes | {}; // Aquí usamos la interfaz Agentes
 }
 
 const initialState: AgentSliceState = {
     msg: '',
     error: '',
     status: '',
-    data: [], // Inicialmente, el dato es nulo
+    data: [], // Inicialmente, el dato es nulo,
+    AgenteId: {}
 };
 export const getAgent = createAsyncThunk('agent/getAgent', async () => {
     const response = await axios.get(`${import.meta.env.VITE_API_URL}/agents`, {
@@ -34,7 +36,7 @@ export const getAgentId = createAsyncThunk('agent/getAgentId', async (id: string
         withCredentials: false,
     });
 
-    return response.data;
+    return response.data.data;
 });
 export const agentSlice = createSlice({
     name: 'agent',
@@ -64,7 +66,7 @@ export const agentSlice = createSlice({
             })
             .addCase(getAgentId.fulfilled, (state, action) => {
                 state.status = 'fulfilled';
-                state.data = action.payload
+                state.AgenteId = action.payload
             })
             .addCase(getAgentId.rejected, (state, action) => {
                 state.status = 'rejected';
