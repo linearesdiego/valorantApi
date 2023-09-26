@@ -37,6 +37,7 @@ span {
     position: absolute;
     top: 0px;
     left: 200px;
+    width: 300px;
 }
 
 .slider h3 {

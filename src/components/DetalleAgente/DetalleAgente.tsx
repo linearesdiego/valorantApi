@@ -33,7 +33,7 @@ export const DetalleAgente = () => {
     const agentes = useAppSelector((state) => state.agent.data) as agentInterface[]
     const settings = {
         infinite: true,
-        slidesToShow: 10,
+        slidesToShow: 20,
         slidesToScroll: 1,
         vertical: true,
         verticalSwiping: true,
@@ -50,8 +50,6 @@ export const DetalleAgente = () => {
 
     const handleClick = (item: Ability) => {
         setInfoAgente(item)
-        setClick(true)
-        setImageVisible(false);
 
     }
     return (
@@ -111,7 +109,7 @@ export const DetalleAgente = () => {
                             {
                                 detalleAgente?.abilities?.map((item) => (
                                     <img onClick={() => handleClick(item)}
-                                        className={`habilidadesImg`}
+                                        className="habilidadesImg"
                                         key={item.displayIcon} src={item?.displayIcon} alt="" />
                                 ))
                             }

@@ -9,93 +9,110 @@
     overflow: hidden;
     color: wheat;
 }
-.rol{
+
+.rol {
     font-size: 1.5em;
     text-transform: uppercase;
     margin-bottom: 40px;
 }
-.infoAgente{
+
+.infoAgente {
     margin-top: 20px;
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 100px;
     justify-content: flex-end;
+    padding: 20px;
 }
-.infoAgente p{
+
+.infoAgente p {
     max-width: 400px;
     margin-top: 10px;
-    
+
 
 }
-.Nombre{
+
+.Nombre {
     font-size: 4em;
     cursor: pointer;
 }
-.Nombre:hover{
+
+.Nombre:hover {
     color: #ff4655;
 }
-.infoAgente h2{
+
+.infoAgente h2 {
     font-size: 16px;
 
 }
-.imgRol{
+
+.imgRol {
     width: 40px !important;
     object-fit: cover;
     margin-left: 10px;
 }
+
 .AgentesDetalleInfo .AgentesDetalleInfoImg {
-    height: 600px;
+    height: 780px;
     object-fit: cover;
     width: 300px;
 }
 
 /*habilidades*/
-.habilidadesBox{
+.habilidadesBox {
     width: 100%;
     padding: 40px 60px;
-    background-color:  #ede8e0;
+    background-color: #ede8e0;
 }
-.infoImg{
+
+.infoImg {
     margin-top: 20px;
     display: flex;
     gap: 20px;
 }
-.habilidadesImg{
+
+.habilidadesImg {
     width: 100px;
     filter: invert(1);
     border: 2px solid black;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    
+
 
 }
-.habilidadesImg:hover{
+
+.habilidadesImg:hover {
     background: linear-gradient(to left, #ff4655 50%, transparent 50%);
     background-size: 200% 100%;
     transition: background-position 0.3s ease;
     background-position: -100% 0;
     filter: invert(0);
 }
-.habilidadesClick{
+
+.habilidadesClick {
     background-color: #ff4655;
     filter: invert(0);
 
 }
-.infoHabilidadesItemTitle{
+
+.infoHabilidadesItemTitle {
     margin-top: 20px;
     font-size: 2em;
 }
-.infoHabilidadesItemParrafo{
+
+.infoHabilidadesItemParrafo {
     max-width: 500px;
 }
-.habilidadesContainer{
+
+.habilidadesContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
-.sliderDetalle{
+
+.sliderDetalle {
     color: white;
     position: absolute;
     top: 0px;
