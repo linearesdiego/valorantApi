@@ -1,0 +1,20 @@
+.mapasBox{
+    padding: 20px;
+    width: 100%;
+    background-color: #ede8e0;
+
+}
+.mapasContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+.mapasItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mapasItem img{
+    width: 200px;
+}

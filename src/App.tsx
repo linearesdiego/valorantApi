@@ -1,9 +1,7 @@
-import { useEffect } from 'react'
 import './App.css'
-import { fetchData } from './utils/api'
-import { DetalleAgente, Hero, HomeAgentes, HomeMapas, Navbar } from './components'
+import { DetalleAgente, Navbar } from './components'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Agentes, Home } from './pages'
+import { Agentes, Home, Mapas } from './pages'
 //react router dom
 
 function App() {
@@ -18,7 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/agent" element={<Agentes />} />
         <Route path="/detalleAgent/:id" element={<DetalleAgente />} />
-        <Route path="/map" element={<Home />} />
+        <Route path="/map" element={<Mapas />} />
       </Routes>
     </BrowserRouter>
   )
